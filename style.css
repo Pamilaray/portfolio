@@ -66,7 +66,7 @@ nav ul li a:hover {
 
 .leftSection {
   font-size: 2.5rem;
-  margin-left: 60px;
+  margin-left: 130px;
 }
 
 .btn {
@@ -252,6 +252,8 @@ hr {
   margin-top: 40px;
   padding-left: 40px;
   border-left: 3px solid blueviolet;
+  position: relative;
+  margin-top: 40px;
 }
 
 .edu-box {
@@ -277,6 +279,7 @@ hr {
   padding: 20px 25px;
   border-radius: 10px;
   transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
 }
 
 .edu-content:hover {
@@ -297,22 +300,27 @@ hr {
 
 .edu-sec {
   display: flex;
+  align-items: center;
 }
 
-.edu-content .text{
-  padding: 20px;
+.edu-sec .text{
+  text-align: center;
+  flex: 1;
+  margin: auto;
+  max-width: 700px;
 }
 
 .edu-box img{
-  max-width: 170px;
+  max-width: 200px;
 }
 
 /* ---------- Projects Section ---------- */
 .projectSection {
   max-width: 90vw;
   margin: auto;
-  padding: 60px 0;
+  padding: 0 0;
   text-align: center;
+
 }
 
 .projectSection h1 {
@@ -329,7 +337,16 @@ hr {
   font-size: 1rem;
 }
 
-.projectSection .box {
+.project-heading{
+  text-align: center;
+  color: #bb86fc;
+}
+.projectSection .box{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectSection .box1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -338,7 +355,7 @@ hr {
   margin-top: 40px;
 }
 
-.leftBox img {
+.box1 .leftBox img {
   width: 500px;
   max-width: 100%;
   height: 270px;
@@ -347,17 +364,17 @@ hr {
   transition: transform 0.4s ease;
 }
 
-.leftBox img:hover {
+.box1 .leftBox img:hover {
   transform: scale(1.03);
 }
 
-.rightBox {
+.box1 .rightBox {
   width: 45%;
   min-width: 280px;
   text-align: left;
 }
 
-.rightBox p {
+.box1 .rightBox p {
   font-size: 1.1rem;
   margin-bottom: 20px;
 }
@@ -377,6 +394,31 @@ hr {
   background-color: rgb(150, 60, 200);
   transform: scale(1.05);
 }
+
+.projectSection .box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.box2 .leftBox {
+  width: 45%;
+  min-width: 280px;
+  text-align: left;
+}
+
+.box2 .rightBox img {
+  width: 500px;
+  max-width: 100%;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(187, 120, 249, 0.3);
+  transition: transform 0.4s ease;
+}
+
 
 /* ---------- Contact Section ---------- */
 .contact {
